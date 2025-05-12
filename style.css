@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#threeCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#chatbot-placeholder {
+    bottom: 20px;
+    right: 20px;
+    width: 25vw;
+    height: 25vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.z-index-2 {
+    z-index: 2;
+    position: relative;
+}
