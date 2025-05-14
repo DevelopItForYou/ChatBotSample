@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <!-- navigation menu to navigate to 4 other pages -->   
-     
+    <!-- navigation menu to navigate to 4 other pages -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Awsome Chatbot</a>
@@ -53,31 +53,31 @@
                 </ul>
             </div>
         </div>
-    </nav>  
-    
+    </nav>
+
     <!-- Chatbot Placeholder -->
     <div id="chatbot-placeholder" class="position-fixed ">
         <!-- Bot script will be added here later -->
-        <parsiverse-rag-chat rag-url="https://parsiverse-rag-proxy-worker.developitforyou.workers.dev" user-identifier=""
-        language="fa" chat-title="کتابفروشی ما" placeholder-text="آماده‌ی پاسخگویی" button-text="ارسال"
-        balloon-mode="false" button-position="bottom-right" button-icon="chat" button-content=""
-        chat-position="above" width="100%" header-background-color="#fff" header-text-color="#000000"
-        user-message-background-color="#8B5CF6" user-message-text-color="#ffffff"
-        assistant-message-background-color="#c5adfa" assistant-message-text-color="#1f2937"
-        input-background-color="#ffffff" input-text-color="#000000" button-background-color="#8B5CF6"
-        button-text-color="#ffffff" border-color="#dccefc" icon-color="#8B5CF6"
+        <parsiverse-rag-chat rag-url="parsiverse-rag-proxy-worker.developitforyou.workers.dev" user-identifier=""
+            language="fa" chat-title="بهترین کتابفروشی " greeting-message="Hello! How can I assist you today? "
+            placeholder-text="آماده‌ی پاسخگویی" button-text="ارسال" balloon-mode="true" button-position="bottom-right"
+            button-icon="chat" button-content="" chat-position="above" width="100%" height="500px"
+            header-background-color="#f9f7fd" header-text-color="#4c1d95" user-message-background-color="#8b5cf6"
+            user-message-text-color="#ffffff" assistant-message-background-color="#ede9fe"
+            assistant-message-text-color="#5b21b6" input-background-color="#ffffff" input-text-color="#4c1d95"
+            button-background-color="#7c3aed" button-text-color="#ffffff" border-color="#ddd6fe" icon-color="#8b5cf6"
             font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif"
-            assistant-icon-type="ai" footer-background-color="#fff" messages-background-color="#ffffff"
-            container-background-color="#ffffff"></parsiverse-rag-chat>
-        </div>
-        
-        <!-- Main Content -->
-        <div class="container position-relative z-index-2">
-            <h1 class="text-white mt-5">My Vercel App</h1>
-            <!-- Add your content here -->
-        </div>
-        <canvas id="threeCanvas"></canvas>
-        
+            assistant-icon-type="bot" footer-background-color="#f9f7fd" messages-background-color="#faf5ff"
+            container-background-color="#f5f3ff"></parsiverse-rag-chat>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container position-relative z-index-2">
+        <h1 class="text-white mt-5">My Vercel App</h1>
+        <!-- Add your content here -->
+    </div>
+    <canvas id="threeCanvas"></canvas>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/parsiverse-rag-web-component@latest/dist/index.standalone.js"></script>
 </body>
